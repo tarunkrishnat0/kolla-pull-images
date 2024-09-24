@@ -2,9 +2,11 @@
 # Description: This script use to pull images from public docker
 #              registry and push them to local docker registry.
 
+local_registry_host="192.168.2.79" # needs to be updated
+kolla_release="2023.1-ubuntu-jammy" # needs to be updated
+# To see available images check this link: https://quay.io/repository/openstack.kolla/fluentd?tab=tags
+
 public_registry_host="quay.io"
-local_registry_host="docker-registry"
-kolla_release="zed-ubuntu-jammy"
 IMAGE_LIST="kolla-images.list"
 
 #
